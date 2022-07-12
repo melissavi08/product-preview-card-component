@@ -1,3 +1,50 @@
+:root {
+  --primary-light-color: #f2ebe3;
+  --primary-dark-color: #3c8067;
+  --secondary-light-color: #ffffff;
+  --secondary-dark-color: #1c232b;
+  --complementary-color: #6c7289;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-light-color);
+}
+
+.infoCard {
+  background-color: var(--secondary-light-color);
+}
+
+.articleName {
+  color: var(--complementary-color);
+}
+
+h1 {
+  color: var(--secondary-dark-color);
+}
+
+p,
+.realPrice {
+  color: var(--complementary-color);
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  width: 230px;
+  height: 40px;
+  color: var(--secondary-light-color);
+  background-color: var(--primary-dark-color);
+  border-style: none;
+  border-radius: 5px;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
