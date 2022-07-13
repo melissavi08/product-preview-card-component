@@ -10,14 +10,27 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Product preview card component</title>
 
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <main>
-      <section class="imgCard"></section>
+      <section class="imgCard">
+        <picture>
+          <source
+            media="(min-width:520px)"
+            srcset="./images/image-product-desktop.jpg"
+          />
+          <img src="./images/image-product-mobile.jpg" alt="" />
+        </picture>
+      </section>
       <section class="infoCard">
         <span class="articleName">Perfume</span>
         <h1>Gabrielle Essence Eau De Parfum</h1>
