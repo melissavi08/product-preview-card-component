@@ -46,7 +46,7 @@ section {
 .infoCard {
   display: grid;
   align-content: space-between;
-  padding: 20px;
+  padding: 24px;
   min-height: 375px;
   background-color: var(--secondary-light-color);
 }
@@ -124,7 +124,7 @@ button:hover {
 
 @media (min-width: 570px) {
   main {
-    max-width: 570px;
+    max-width: 580px;
   }
 
   .infoCard {
