@@ -1,3 +1,30 @@
+:root {
+  --primary-light-color: #f2ebe3;
+  --primary-dark-color: #3c8067;
+  --secondary-light-color: #ffffff;
+  --secondary-dark-color: #1c232b;
+  --complementary-color: #6c7289;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  background-color: var(--primary-light-color);
+}
+
+main {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  padding: 12px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
