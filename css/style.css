@@ -17,7 +17,7 @@ body {
   grid-template-rows: 95% auto;
   place-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 12px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -28,13 +28,13 @@ main {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 600px;
+  max-width: 365px;
   border-radius: 10px;
   overflow: hidden;
 }
 
 section {
-  flex: 1 1 248px;
+  flex: 1 1 273px;
   max-height: 410px;
 }
 
@@ -45,8 +45,9 @@ section {
 
 .infoCard {
   display: grid;
-  align-items: center;
-  padding: 24px;
+  align-content: space-between;
+  padding: 20px;
+  min-height: 375px;
   background-color: var(--secondary-light-color);
 }
 
@@ -107,6 +108,10 @@ button {
   border-style: none;
   border-radius: 5px;
 }
+button:hover {
+  background-color: #22493a;
+  cursor: pointer;
+}
 
 .attribution {
   margin: 10px 0px;
@@ -115,4 +120,14 @@ button {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 570px) {
+  main {
+    max-width: 570px;
+  }
+
+  .infoCard {
+    align-content: center;
+  }
 }
