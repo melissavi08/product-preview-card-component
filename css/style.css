@@ -14,7 +14,7 @@
 
 body {
   display: grid;
-  grid-template-rows: 95% auto;
+  grid-template-rows: 100vh auto;
   place-items: center;
   width: 100%;
   min-height: 100vh;
@@ -35,7 +35,7 @@ main {
 
 section {
   flex: 1 1 273px;
-  max-height: 410px;
+  max-height: 450px;
 }
 
 .imgCard picture img {
@@ -59,16 +59,16 @@ section {
 }
 
 h1 {
-  margin: 20px 0px;
-  font-family: "Fraunces 9pt", serif;
+  margin: 20px 0px 25px;
+  font-family: "Fraunces", serif;
   font-size: 30px;
   line-height: 32px;
   color: var(--secondary-dark-color);
 }
 
 p {
-  margin-bottom: 20px;
-  line-height: 20px;
+  margin-bottom: 25px;
+  line-height: 25px;
 }
 
 .price {
@@ -108,6 +108,7 @@ button {
   border-style: none;
   border-radius: 5px;
 }
+
 button:hover {
   background-color: #22493a;
   cursor: pointer;
@@ -119,10 +120,15 @@ button:hover {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--primary-dark-color);
+  font-weight: 700;
 }
 
 @media (min-width: 570px) {
+  body {
+    grid-template-rows: 90vh auto;
+  }
+
   main {
     max-width: 580px;
   }
