@@ -14,11 +14,11 @@
 
 body {
   display: grid;
-  grid-template-rows: 100vh auto;
+  grid-template-rows: auto 55px;
   place-items: center;
   width: 100%;
   min-height: 100vh;
-  padding: 12px;
+  padding: 24px 12px 12px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   background-color: var(--primary-light-color);
@@ -100,7 +100,7 @@ button {
   justify-content: center;
   column-gap: 10px;
   width: 100%;
-  height: 45px;
+  height: 50px;
   margin-top: 25px;
   font-weight: 700;
   color: var(--secondary-light-color);
@@ -115,7 +115,7 @@ button:hover {
 }
 
 .attribution {
-  margin: 10px 0px;
+  margin: 20px 0px 10px;
   font-size: 11px;
   text-align: center;
 }
@@ -124,16 +124,16 @@ button:hover {
   font-weight: 700;
 }
 
-@media (min-width: 570px) {
-  body {
-    grid-template-rows: 90vh auto;
-  }
-
+@media (min-width: 590px) {
   main {
     max-width: 600px;
   }
 
   .infoCard {
     align-content: center;
+  }
+
+  h1 {
+    width: 200px;
   }
 }
